@@ -6,7 +6,5 @@
     "eslint": "^3.19.0",
     "eslint-config-lighthouselabs": "lighthouse-labs/eslint-config-lighthouselabs"
   },
-  "dependencies": {
-    "jquery": "^3.6.0"
-  }
+  "dependencies": {}
 }

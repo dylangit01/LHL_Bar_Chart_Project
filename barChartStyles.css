@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+.bg-dark {
+  background: #333;
+}
+
+.title {
+  font-size: 2rem;
+  padding-top: .5rem;
+  /* display: block; */
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  color:aqua
+}
+
+.bottom-line {
+  height: 3px;
+  width: 80%;
+  background: #ffbc00;
+  display: block;
+  margin: .5rem auto 1rem
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 1.5 rem;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart {
+  width: 800px;
+  height: 600px;
+  display: flex;
+}
+
+.yAxis {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 100%;
+}
+
+.yAxis li {
+  list-style: none;
+  height: 200px;
+  position: relative;
+  bottom: 195px;
+}
+
+.yAxis span {
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.bars {
+  color: #f9f3f3;
+  font-size: 13px;
+  font-weight: 600;
+  background: #555;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  /* align-items: flex-end; */
+  width: 800px;
+  height: 400px;
+  box-shadow: 0 0 10px rgb(153, 161, 161);
+  border-radius: 5px;
+}
+
+.bars li {
+  list-style: none;
+}
+
+.bars span {
+  position: relative;
+  bottom: -20px;
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  width: 70px;
+  background:#d39219 ;
+  box-shadow: 0 0 10px rgb(223, 193, 95);
+  transition: .5s;
+  transition-property: background, box-shadow;
+}
+
+.bar:hover {
+  background:rgb(34, 158, 230);
+  box-shadow: 0 0 10px rgb(112, 180, 236);
+  cursor: pointer;
+}
+
+.bar::before{
+  color: #fff;
+  content: attr(data-percentage) '%';
+  position: relative;
+  text-align: center;
+  bottom: 30px;
+
+
+}
+
